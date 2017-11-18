@@ -37,7 +37,7 @@ return gulp.src('./app/temp/sprite/css/*.css')
   .pipe(gulp.dest('./app/assets/styles/modules'));
 });
 
-gulp.task('endClean', ['copySpriteGraphic','copySpriteCSS']function(){
+gulp.task('endClean', ['copySpriteGraphic','copySpriteCSS'], function(){
   return del('./app/temp/sprite');
 });
 
